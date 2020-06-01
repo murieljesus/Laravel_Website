@@ -35,15 +35,12 @@
             </tbody>
             @endforeach
           </table>
-        </div>   
-        <a class="btn-link" href="{{ route('Port.pdf') }}"> Descargar</a>
+        </div>  
         </div>
     </body>
-
 </div>
-@endsection
 </html>
-
+@endsection
 
 
     

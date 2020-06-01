@@ -17,27 +17,16 @@ class Pdfcontroller extends Controller
     public function index()
 
     {    
-        //$results = Gestion::latest();
-        $results = DB::select('select * from gestion where id = 1');
+        $results = Gestion::latest();
         return view('Port', compact('results'));
     }
 
-    public function pdf()
+    public function pdf($id)
     {        
-        /**
-         * toma en cuenta que para ver los mismos 
-         * datos debemos hacer la misma consulta
-       
-       *  $datos = Gestion::latest()->paginate();
         
-       *
-        *
-         **/
-        //$id = Auth::user()->id;
-        $results = DB::select('select * from gestion where id = 1');
-        //return $pdf->download('listado.pdf');*/
+        $results = DB::select("select * from gestion where id = {$id}");
         $pdfs = PDF::loadView('Port',compact('results'));
-        return  $pdfs->download();
+        return  $pdfs->stream();
 
     }
 
@@ -68,11 +57,8 @@ class Pdfcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($datos)
+    public function show($id)
     {
-        $datos = Gestion::latest()->paginate();
-        $data = view('portfolios',compact('datos'));
-        return view('Pdf');
     }
 
     /**

@@ -7,7 +7,6 @@
     <title>Cosumos</title>
 </head>
  @extends('layout')
-
  @section('contenido')
 <body>
     <div class="container"> 
@@ -36,7 +35,7 @@
                 <td>{{ $datos->consumo }}</</td>
                 <td>{{ $datos->fecha}}</</td>
                 <td>{{ $datos->vencimiento}}</</td>
-                <td> <a class="btn-link" href="{{ route('Port') }}"> Ver Resumen</a></td>
+                <td> <a class="btn-link" href="{{ route('Port.pdf' , $datos->id) }}"> Ver Resumen</a></td>
               </tr>
             </tbody>
           @endforeach

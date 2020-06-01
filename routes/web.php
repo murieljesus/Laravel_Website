@@ -10,7 +10,7 @@ Route :: view('/about', 'about')->name('about');
 Route :: view('/contact', 'contact')->name('contact');
 Route :: view('/profile', 'profile')->name('profile');
 Route :: view('/changePassword','changePassword')->name('changePassword');
-Route :: view('/Port', 'Port')->name('Port');
+
 
 
 //rutas restfull
@@ -29,20 +29,15 @@ Route :: get('/portfolios', 'gestioncontroller@index')->name('portfolios');
 Route ::patch('/profile/{datos}', 'usercontroller@update')->name('profile.update');
 //routa mail
 Route :: post('contact', 'mensajecontroller@store');
-
-
-
-Route :: get('/Pdf/{datos}', 'Pdfcontroller@show')->name('Pdf.show');
 //routa chart
 Route :: get('/chart', 'Chartcontroller@show')->name('chart.show');
 //ruta update password
 Route::get('change-password', 'ChangePasswordController@index');
 Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
 //routa  pdf
-Route :: get('/Port', 'Pdfcontroller@index')->name('Port');
-Route :: get('/Port/Pdf', 'Pdfcontroller@pdf')->name('Port.pdf');
-Auth::routes();
+Route::get('/Port/Pdf/{id}', 'Pdfcontroller@pdf')->name('Port.pdf');
 
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
