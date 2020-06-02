@@ -23,9 +23,10 @@ class Pdfcontroller extends Controller
 
     public function pdf($id)
     {        
-        
+        $users = Auth::user()->id;
         $results = DB::select("select * from gestion where id = {$id}");
-        $pdfs = PDF::loadView('Port',compact('results'));
+        $user = DB::select("select * from users where id = {$users}");
+        $pdfs = PDF::loadView('Port',compact('results'),compact('user'));
         return  $pdfs->stream();
 
     }

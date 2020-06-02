@@ -13,7 +13,8 @@
 @section('contenido')
     <h1>home(hace falta un index)</h1>
     @auth
-        <h2> {{ Auth::user()->name }}</h2>
+        <h4> {{ Auth::user()->name }}</h4>
+        
     @endauth
 @endsection
 </body>

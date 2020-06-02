@@ -15,7 +15,9 @@
           <div class="row">
             <div class="container col-lg-6 float-md-left ">   
             <table class="table ">
-                        
+                        @foreach ($user as $item)
+                            <p>{{ $item->name }}</p>
+                        @endforeach
             <thead>
               <tr>
                 <th scope="col">Periodo</th>
