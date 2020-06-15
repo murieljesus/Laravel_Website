@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use PhpParser\NodeVisitorAbstract;
 
 //vistas
+
 Route :: view('/index','index')->name('index');
 Route :: view('/', 'home')->name('home');
 Route :: view('/about', 'about')->name('about');
@@ -23,14 +24,12 @@ Route :: get('/portfolio/{datos}/edit', 'portfoliocontroller@edit')->name('portf
 Route :: patch('/portfolio/{datos}', 'portfoliocontroller@update')->name('portfolio.update');
 Route :: delete('/portfolio/{datos}', 'portfoliocontroller@destroy')->name('portfolio.destroy');
 
-//routa consumo
+//route consumo/chart
 Route :: get('/portfolios', 'gestioncontroller@index')->name('portfolios');
 //routa update contacto
 Route ::patch('/profile/{datos}', 'usercontroller@update')->name('profile.update');
 //routa mail
 Route :: post('contact', 'mensajecontroller@store');
-//routa chart
-Route :: get('/chart', 'Chartcontroller@show')->name('chart.show');
 //ruta update password
 Route::get('change-password', 'ChangePasswordController@index');
 Route::post('change-password', 'ChangePasswordController@store')->name('change.password');

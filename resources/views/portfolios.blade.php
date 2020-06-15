@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset="utf-8">
+    </script>
     <title>Cosumos</title>
 </head>
  @extends('layout')
@@ -15,6 +17,12 @@
             Aqui encontraras toda la informacion relacionado a tus consumos
         </div>
 <div class="row">
+  <body>
+    <div style="width: 20%">
+        {!! $consumochart->container() !!}
+    </div>
+</body>
+    {!! $consumochart->script() !!}
 
           <div class="container col-lg-6 float-md-left ">   
         <table class="table ">
@@ -47,9 +55,7 @@
     </body>
     <div  class="col lg-col-6" id="chart_div"></div>
 </div>
-@include('chart')
+
 </html>
 @endsection
-
-
     

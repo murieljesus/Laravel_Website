@@ -10,8 +10,6 @@
     <link href="css/appstyle.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 
-    
-
 </head>
 <body class="bodys">
     <div id="d-flex flex-column my-auto">

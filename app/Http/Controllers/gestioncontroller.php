@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Gestion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Barryvdh\DomPDF\Facade as PDF;
+use App\Charts\Consumochart;
 
 class gestioncontroller extends Controller
 {
@@ -16,7 +19,12 @@ class gestioncontroller extends Controller
     public function index()
     {
         $datos = Gestion::latest()->paginate();
-        return view('portfolios', compact('datos'));
+        $consumochart = new Consumochart;
+        $consumochart->labels(['consumo', 'periodo']);
+        $consumochart->minimalist(true);
+        $consumochart->dataset('Users by trimester', 'bar', [10, 25, 13])
+            ->color("rgb(255, 99, 132)");
+        return view('portfolios',['consumochart' => $consumochart] ,compact('datos'));
     }
 
     /**
@@ -24,20 +32,6 @@ class gestioncontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function pdf()
-    {        
-        /**
-         * toma en cuenta que para ver los mismos 
-         * datos debemos hacer la misma consulta
-        **/
-       $datos = Gestion::latest()->paginate();
-        $pdf = PDF::loadView('portfolios', compact('datos'));
-
-        return $pdf->stream();
-        //return $pdf->download('listado.pdf');*/
-    }
-
 
     public function create()
     {
@@ -63,7 +57,6 @@ class gestioncontroller extends Controller
      */
     public function show(Gestion $id)
     {
-
     }
 
     /**
