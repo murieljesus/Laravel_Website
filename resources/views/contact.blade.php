@@ -1,7 +1,7 @@
 @extends('layout')
 @section('contenido')
 <title>Contacto</title>
-<div class="container">
+<div class="container position-relative">
     <div class="row">
         
         <div class="col-lg-6">

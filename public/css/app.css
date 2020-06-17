@@ -168,7 +168,7 @@ sup {
 }
 
 a {
-    color: red;
+    color: #a846a0ff;
     text-decoration: none;
     background-color: transparent;
 }
@@ -3187,12 +3187,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: red;
+    color: #a846a0ff;
     text-decoration: none;
 }
 
 .btn-link:hover {
-    color: #b30000;
+    color: #a846a0ff;
     text-decoration: underline;
 }
 
@@ -4367,7 +4367,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: red;
+    background-color: #a846a0ff;
 }
 
 .nav-fill .nav-item {

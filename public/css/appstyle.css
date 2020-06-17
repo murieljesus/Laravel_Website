@@ -5,7 +5,7 @@
 }
 
 .unorder {
-    background-color: #23ce6bff;
+    background-color: #f6f8ffff;
     /* barra de navegacion y botones*/
 }
 
@@ -13,13 +13,14 @@
 /*link navbar*/
 
 .butt {
-    color: #f6f8ffff;
+    color: #23ce6bff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
+    font-weight: 600;
 }
 
 .foots {
-    background-color: #50514fff;
+    background-color: #2d3246;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -28,7 +29,29 @@
 }
 
 .texto {
-    font-weight: 600;
+    color: #f6f8ffff;
+    font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
+    font-size: small;
+}
+
+h5 {
+    color: #23ce6bff;
+}
+
+.index-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: rgba(68, 68, 68, 0.562);
+    text-align: center;
+}
+
+.card-font {
+    background-color: #50c9ceff;
+    color: #2d3246;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
 }
