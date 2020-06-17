@@ -15,17 +15,13 @@
 .butt {
     color: #23ce6bff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
+    font-size: 18;
     font-weight: 600;
 }
 
 .foots {
     background-color: #2d3246;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.rec {
-    background-color: #50c9ceff;
 }
 
 .texto {
@@ -41,17 +37,24 @@ h5 {
 
 .index-font {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 500;
     background-color: rgba(68, 68, 68, 0.562);
     text-align: center;
 }
 
 .card-font {
-    background-color: #50c9ceff;
-    color: #2d3246;
-    font-weight: normal;
+    color: #50514fff;
+    background-color: #f6f8ffff;
+    font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     text-align: center;
+}
+
+.hydro {
+    background-color: rgba(80, 202, 206, 0.644);
+    display: flex;
+    justify-content: center;
+    padding: 0px;
 }

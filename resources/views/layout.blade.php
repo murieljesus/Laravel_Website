@@ -27,7 +27,7 @@
     <img src="img/hydro2.png" width="90" height="75" >
     </a>
         <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link butt"  href="{{ route('index') }}">Home</a>
+            <li class="nav-item"><a class="nav-link butt"  href="{{ route('index') }}">Inicio</a>
             </li>
             <li class="nav-item"> <a class="nav-link butt" href="{{ route('contact') }}">Contacto</a>
             </li>

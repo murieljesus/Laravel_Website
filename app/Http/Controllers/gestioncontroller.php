@@ -90,6 +90,6 @@ class gestioncontroller extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }
