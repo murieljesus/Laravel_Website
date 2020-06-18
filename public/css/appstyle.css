@@ -5,7 +5,7 @@
 }
 
 .unorder {
-    background-color: #f6f8ffff;
+    background-color: rgba(80, 202, 206, 0.178);
     /* barra de navegacion y botones*/
 }
 
@@ -57,4 +57,8 @@ h5 {
     display: flex;
     justify-content: center;
     padding: 0px;
+}
+
+.hydro1 {
+    background-color: rgba(80, 202, 206, 0.644);
 }
