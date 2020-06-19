@@ -5,7 +5,7 @@
 }
 
 .unorder {
-    background-color: rgba(80, 202, 206, 0.178);
+    background-color: rgba(80, 202, 206, 0.5);
     /* barra de navegacion y botones*/
 }
 
@@ -61,4 +61,11 @@ h5 {
 
 .hydro1 {
     background-color: rgba(80, 202, 206, 0.644);
+}
+
+.card-about {
+    color: #50514fff;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }

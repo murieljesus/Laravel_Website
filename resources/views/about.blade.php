@@ -14,8 +14,6 @@
                  <p class="lead text-secondary text-justify ">De la misma manera que la Asociación de Distribuidores de Energía Eléctrica de la República Argentina (ADEERA), la Asociación de Grandes Usuarios de Energía Eléctrica de la República Argentina (AGUEERA), la Asociación de Transportistas de Energía Eléctrica de la República Argentina (ATEERA) y el Estado Nacional.
                      </p> 
                      <p class="lead text-secondary text-justify "> Hydro propicia el adecuado funcionamiento y la transparencia del mercado eléctrico, con señales de precio y seguridad jurídica que aseguren el abastecimiento eléctrico, garantizando a todos los usuarios del país, en el corto y largo plazo, un servicio de calidad, mejorando dia a dia.</p>
-               
-                
              </div>
         </div>
             

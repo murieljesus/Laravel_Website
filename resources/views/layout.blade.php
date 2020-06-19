@@ -87,9 +87,9 @@
                 <div class="col-md-4 col-xl-3 p-md-3">
                   <h5>Links</h5>
                   <ul class="nav-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="{{ route('about') }}">Nosotros</a></li>
+                    <li><a href="{{ route('contact') }}">Contacto</a></li>
+                    <li><a href="{{ route('index') }}">Inicio</a></li>
                   </ul>
                 </div>
               </div>

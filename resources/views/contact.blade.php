@@ -1,10 +1,10 @@
 @extends('layout')
-@section('contenido')
 <title>Contacto</title>
+@section('contenido')
 <div class="container position-relative">
     <div class="row">
         
-        <div class="col-lg-6">
+        <div class="col-lg-7 p-md-4">
             <div class="card">
                 <div class="card-header"> <h3>Contacto</h3></div>
             <div class="card-body">
@@ -59,9 +59,26 @@
             </div>
         </div>
     </div>
-         <div class="col lg-col-6">
-            <img  class="img-fluid" src="img/email.svg" alt="">
-        </div>
+            <div class="col-lg-4  texto p-md-5">
+                <p class="text-center">
+                    <h4>Aqui podras hacer tu consulta 
+                        o reclamo
+                    </h4>
+                </p>
+                <dl class="contact-list card-about">
+                  <dt>Direccion:</dt>
+                  <dd>Av. Luro 9850, Mar del Plata, Argentina</dd>
+                </dl>
+                <dl class="contact-list card-about ">
+                  <dt>Email:</dt>
+                  <dd><span>questions@hydro.com</span></dd>
+                </dl>
+                <dl class="contact-list card-about">
+                  <dt>Telefonos:</dt>
+                  <dd><span>0800-666-4001</span><span> / </span><span>0800-666-4002</span>
+                  </dd>
+                </dl>
+              </div>
     </div>
 </div>
 @endsection
