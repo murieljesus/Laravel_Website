@@ -8,25 +8,25 @@
     </script>
     <title>Cosumos</title>
 </head>
- @extends('layout')
+ @extends('layouts.log')
  @section('contenido')
 <body>
     <div class="container"> 
-    <h1 class="display-4">Cosumos</h1>
-        <div class="texto text-secondary p-lg-3">
-            Aqui encontraras toda la informacion relacionado a tus consumos
-        </div>
-<div class="row">
-  <body>
-    <div style="width: 20%">
-        {!! $consumochart->container() !!}
-    </div>
-</body>
-    {!! $consumochart->script() !!}
-
-          <div class="container col-lg-6 float-md-left ">   
-        <table class="table ">
-                        
+      <h1 class="display-4">Cosumos</h1>
+          <div class="texto text-secondary p-lg-3">
+              Aqui encontraras toda la informacion relacionado a tus consumos
+          </div>
+          <div class="row">
+<div class="col-4">
+            <div class="card rounded">
+              <div class="card-body">
+                  {!! $consumochart->container() !!}
+              </div>
+            </div>
+              {!! $consumochart->script() !!}
+          </div>
+          <div class="container col-lg-7">   
+          <table class="table ">              
             <thead>
               <tr>
                 <th scope="col">Periodo</th>
@@ -50,12 +50,10 @@
           </table>
         <a class="btn btn-primary" href="{{ route('portfolio.create')}}"> Crear Proyecto</a>
         </div>    
-
+          </div>
+          
         </div>
     </body>
-    <div  class="col lg-col-6" id="chart_div"></div>
-</div>
-
 </html>
 @endsection
     

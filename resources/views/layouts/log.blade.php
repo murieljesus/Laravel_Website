@@ -60,41 +60,6 @@
     <main>
         @yield('contenido')
     </main>
-        <footer class="foots " >
-            <div class="container">
-              <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                  <div class="pr-xl-4 p-md-5">
-                    <p class="texto"><span>© Hydro  </span><span class="copyright-year">2020</span><span> todos los derechos reservados.</span></p>
-                  </div>
-                </div>
-                <div class="col-md-4 texto p-md-3">
-                  <h5>Contacto</h5>
-                  <dl class="contact-list">
-                    <dt>Direccion:</dt>
-                    <dd>Av. Luro 9850, Mar del Plata, Argentina</dd>
-                  </dl>
-                  <dl class="contact-list">
-                    <dt>Email:</dt>
-                    <dd><span>questions@hydro.com</span></dd>
-                  </dl>
-                  <dl class="contact-list">
-                    <dt>Telefonos:</dt>
-                    <dd><span>0800-666-4001</span><span> o </span><span>0800-666-4002</span>
-                    </dd>
-                  </dl>
-                </div>
-                <div class="col-md-4 col-xl-3 p-md-3">
-                  <h5>Links</h5>
-                  <ul class="nav-list">
-                    <li><a href="{{ route('about') }}">Nosotros</a></li>
-                    <li><a href="{{ route('contact') }}">Contacto</a></li>
-                    <li><a href="{{ route('index') }}">Inicio</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
     </div>
 </body>
 </html>

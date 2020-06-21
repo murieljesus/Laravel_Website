@@ -20,10 +20,11 @@ class gestioncontroller extends Controller
     {
         $datos = Gestion::latest()->paginate();
         $consumochart = new Consumochart;
-        $consumochart->labels(['consumo', 'periodo']);
-        $consumochart->minimalist(true);
-        $consumochart->dataset('Users by trimester', 'bar', [10, 25, 13])
-            ->color("rgb(255, 99, 132)");
+        $consumochart->labels(['consumo', 'periodo', 'pe', 'a', 'b']);
+        $consumochart->height(250);
+        $consumochart->dataset('Consumo por periodo', 'bar', [1, 25, 13, 10, 12])
+                    ->color("rgb(180, 79, 200)")
+                    ->backgroundcolor("rgb(180, 79, 172)");
         return view('portfolios',['consumochart' => $consumochart] ,compact('datos'));
     }
 

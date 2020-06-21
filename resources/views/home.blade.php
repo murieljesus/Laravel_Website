@@ -8,7 +8,7 @@
     <title>Home</title>
 </head>
 <body>
-@extends('layout')
+@extends('layouts.log')
 @section('title')
 @section('contenido')
     <h1>home(hace falta un index)</h1>

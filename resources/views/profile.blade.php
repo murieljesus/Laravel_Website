@@ -7,15 +7,16 @@
     <title>Perfil</title>
 </head>
 <body>
-    @extends('layout')
-    <div class="container mx-auto col-md-5"> 
+    @extends('layouts.log')
     @section('contenido')
-    <div class="col-md-6 ">
-        <div class="card" >
+    <div class="container mx-auto"> 
+      <div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="card " >
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>Your Profile</h4>
+                        <h4>Mis Datos</h4>
                         <hr>
                     </div>
                 </div>
@@ -80,6 +81,8 @@
             </div>
         </div>
     </div>
+      </div>
+
 </div>
 </div>
 @endsection
