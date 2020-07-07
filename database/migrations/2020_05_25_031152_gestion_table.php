@@ -16,9 +16,10 @@ class GestionTable extends Migration
         Schema::create('gestion', function (Blueprint $table) {
             $table->id();
             $table->string('consumo')->nullable();
+            $table->string('estado')->nullable();  
             $table->dateTime('fecha')->nullable();
             $table->dateTime('vencimiento')->nullable();
-            $table->bigInteger('periodo')->nullable();
+            $table->bigInteger('monto')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

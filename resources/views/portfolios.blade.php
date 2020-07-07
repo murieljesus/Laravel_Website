@@ -12,46 +12,65 @@
  @section('contenido')
 <body>
     <div class="container"> 
-      <h1 class="display-4">Cosumos</h1>
-          <div class="texto text-secondary p-lg-3">
-              Aqui encontraras toda la informacion relacionado a tus consumos
-          </div>
-          <div class="row">
-<div class="col-4">
-            <div class="card rounded">
-              <div class="card-body">
-                  {!! $consumochart->container() !!}
+      <div class="card">
+        <div class="card-header badge-info text-center">
+          <h3 class="text-white">
+            Bienvenido {{ Auth::user()->name }}
+          </h3>
+          <blockquote class="text-center">
+            <h4 class="text-white">
+              Este es el estado actual de la cuenta
+            </h4>
+          </blockquote>
+        
+           
+        </div>
+      </div>
+          <div class="row p-3">
+            <div class="col-lg-4">
+              <div class="card rounded">
+                  <div class="card-header badge-secondary">
+                    Ultimos consumos
+                  </div>
+                  <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item">Consumo (kW): {{ DB::table('gestion')->get()->last()->consumo }}</li>
+                    <li class="list-group-item">Vencimiento: {{ DB::table('gestion')->get()->last()->vencimiento }}</li>
+                    <li class="list-group-item">Fecha de emision: {{ DB::table('gestion')->get()->last()->fecha }}</li>
+                  </ul>
+        
               </div>
+              <div class="card rounded ">
+                    <div class="card-body">
+                      {!! $consumochart->container() !!}
+                    </div>
+              </div>
+                {!! $consumochart->script() !!}
             </div>
-              {!! $consumochart->script() !!}
-          </div>
-          <div class="container col-lg-7">   
-          <table class="table ">              
-            <thead>
+            <div class="col-lg-8">   
+              <div class="card rounded">
+            <table class="table ">              
+            <thead class="badge-secondary"> 
               <tr>
-                <th scope="col">Periodo</th>
-                <th scope="col">Consumo</th>
-                <th scope="col">Feche de emision</th>
+                <th scope="col">Importe</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Vencimiento</th>
-                <th scope="col">Factura</th>
+                <th scope="col">Descargar</th>
               </tr>
             </thead>
           @foreach ($datos as $datos)
             <tbody>
               <tr>
-                <td>{{ $datos->periodo }}</</td>
-                <td>{{ $datos->consumo }}</</td>
-                <td>{{ $datos->fecha}}</</td>
+                <td>{{ $datos->monto}}</</td>
+                <td>{{ $datos->estado}}</</td>
                 <td>{{ $datos->vencimiento}}</</td>
                 <td> <a class="btn-link" href="{{ route('Port.pdf' , $datos->id) }}"> Ver Resumen</a></td>
               </tr>
             </tbody>
           @endforeach
           </table>
-        <a class="btn btn-primary" href="{{ route('portfolio.create')}}"> Crear Proyecto</a>
+              </div>
         </div>    
           </div>
-          
         </div>
     </body>
 </html>

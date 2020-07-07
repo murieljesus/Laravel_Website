@@ -54,13 +54,6 @@
                           </div>
 
                           <div class="form-group row">
-                            <label  class="col-4 col-form-label">Email</label> 
-                            <div class="col-8">
-                              <input  name="email" value="{{ Auth::user()->email }}"  class="form-control here" required="required" type="text">
-                            </div>
-                          </div>
-
-                          <div class="form-group row">
                             <label  class="col-4 col-form-label">Telefono</label> 
                             <div class="col-8">
                               <input  name="phone" value="{{ Auth::user()->phone }}"  class="form-control here" type="text">

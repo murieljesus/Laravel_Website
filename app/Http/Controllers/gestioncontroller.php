@@ -19,12 +19,15 @@ class gestioncontroller extends Controller
     public function index()
     {
         $datos = Gestion::latest()->paginate();
+        $info = Gestion::get('consumo');
+     
+        
         $consumochart = new Consumochart;
-        $consumochart->labels(['consumo', 'periodo', 'pe', 'a', 'b']);
+        $consumochart->labels(['6/20', '5/20', '4/20', '3/20', '2/20']);
         $consumochart->height(250);
-        $consumochart->dataset('Consumo por periodo', 'bar', [1, 25, 13, 10, 12])
-                    ->color("rgb(180, 79, 200)")
-                    ->backgroundcolor("rgb(180, 79, 172)");
+        $consumochart->dataset('Consumo por periodo(kW)', 'bar', [355 ,213 ,300 ,100 ,150])
+                    ->color("rgb(35, 206, 107)")
+                    ->backgroundcolor("rgb(35, 206, 107)");
         return view('portfolios',['consumochart' => $consumochart] ,compact('datos'));
     }
 
