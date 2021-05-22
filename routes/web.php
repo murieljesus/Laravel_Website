@@ -6,7 +6,7 @@ use PhpParser\NodeVisitorAbstract;
 //vistas
 
 Route :: view('/index','index')->name('index');
-Route :: view('/', 'home')->name('home');
+Route :: view('/', 'index')->name('index');
 Route :: view('/about', 'about')->name('about');
 Route :: view('/contact', 'contact')->name('contact');
 Route :: view('/profile', 'profile')->name('profile');
