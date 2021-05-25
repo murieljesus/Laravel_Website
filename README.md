@@ -1,8 +1,8 @@
 # Website using Laravel
 
 ## Visit
- Try the app --> [Test APP](https://immense-stream-72348.herokuapp.com/)
-  Register and login to access other views.
+- Try the app --> [Test APP](https://immense-stream-72348.herokuapp.com/)
+- Register and login to access other views.
 
 ## Setup
 
