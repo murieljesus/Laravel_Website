@@ -1,7 +1,8 @@
 # Website using Laravel
 
 ## Visit
-  [Test APP](https://immense-stream-72348.herokuapp.com/)
+ Try the app --> [Test APP](https://immense-stream-72348.herokuapp.com/)
+  Register and login to access other views.
 
 ## Setup
 
@@ -14,8 +15,7 @@ Download composer https://getcomposer.org/download/
 - Run php artisan serve 
 
 ## Warming 
- database has not been imported for login
-
+for full access create an .ENV file with your info(database and mail provider )
 
 
 
