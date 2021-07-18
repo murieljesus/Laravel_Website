@@ -17,7 +17,7 @@ class Messagecontroller extends Mailable
      *
      * @return void
      */
-    public $subject = 'mensaje de prueba';
+    public $subject = 'Mensaje de Contacto';
     public function __construct($datos)
     {
         $this->datos = $datos;
