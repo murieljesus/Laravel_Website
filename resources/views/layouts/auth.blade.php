@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <!-- Styles -->
 
     <link href="/css/app.css" rel="stylesheet">
@@ -26,7 +26,7 @@
     <div id="d-flex flex-column my-auto">
         <nav class="navbar shadow p-1 mb-5 rounded unorder">
             <a class="navbar-brand butt" href="{{ route('index') }}">
-                <img src="img/hydro2.png" width="90" height="75" >
+                <img src="/img/hydro2.png" width="90" height="75" >
             </a>
         <ul class="nav nav-pills">
             <li class="nav-item"><a class="nav-link butt"  href="{{ route('index') }}">Inicio</a>
