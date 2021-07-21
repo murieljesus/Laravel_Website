@@ -5,10 +5,10 @@
 - Register and login to access other views.
 
 ## Features
--Create an account.
--Log in.
--Send messagge from Contact link.
--Recive password link verification (restore password).
+- Create an account.
+- Log in.
+- Send messagge from Contact link.
+- Recive password link verification (restore password).
 
 ## Setup
 
