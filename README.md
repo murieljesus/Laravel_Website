@@ -20,7 +20,7 @@ Download composer https://getcomposer.org/download/
 - Run composer global require laravel/install 
 - Run php artisan serve 
 
-## Warming 
+## Warning 
 for full access create an .ENV file with your info(database and mail provider )
 
 
