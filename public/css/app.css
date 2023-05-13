@@ -180,7 +180,7 @@ a {
 }
 
 a:hover {
-  color: #b30000;
+
   text-decoration: underline;
 }
 
@@ -4507,7 +4507,7 @@ input[type=button].btn-block {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-right: 40;
   margin-bottom: 0;
   list-style: none;
 }

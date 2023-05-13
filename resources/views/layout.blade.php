@@ -26,7 +26,7 @@
     <a class="navbar-brand butt" href="{{ route('index') }}">
     <img src="img/hydro2.png" width="90" height="75" >
     </a>
-        <ul class="nav nav-pills">
+        <ul class="nav">
             <li class="nav-item"><a class="nav-link butt"  href="{{ route('index') }}">Inicio</a>
             </li>
             @guest  
@@ -87,9 +87,9 @@
                 <div class="col-md-4 col-xl-3 p-md-3">
                   <h5>Links</h5>
                   <ul class="nav-list">
-                    <li><a href="{{ route('about') }}">Nosotros</a></li>
-                    <li><a href="{{ route('contact') }}">Contacto</a></li>
-                    <li><a href="{{ route('index') }}">Inicio</a></li>
+                    <li><a class="link" href="{{ route('about') }}">Nosotros</a></li>
+                    <li><a class="link" href="{{ route('contact') }}">Contacto</a></li>
+                    <li><a class="link" href="{{ route('index') }}">Inicio</a></li>
                   </ul>
                 </div>
               </div>
