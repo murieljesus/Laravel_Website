@@ -4414,8 +4414,6 @@ input[type=button].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    background-color: rgba(80, 202, 206, 0.644);
 }
 
 .navbar .container,
