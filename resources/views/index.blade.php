@@ -10,7 +10,7 @@
                   <div class="carousel-item active">
                     <img class="d-block"  width="1100" height="500" src="img/power.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                         <p class="index-font">hydro produce el 96% de la energia que se consume en argentina</p>
+                         <p class="index-font">Hydro produce el 96% de la energia que se consume en argentina</p>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -26,7 +26,7 @@
 </div>
 <div class=" container-fluid p-md-0">
         <div class="card-font">
-             <p>Bienvenidos a hydro</p>
+             <p>Bienvenidos a Hydro</p>
              <p>aqui podrán encontrar información del sector</p>
              <p> o contactarnos ante cualquier consulta.</p>
         </div>
