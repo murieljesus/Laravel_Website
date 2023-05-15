@@ -16,7 +16,7 @@
                   <div class="carousel-item">
                     <img class="d-block w-100" src="img/sempra.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="index-font">nuestros asociados son empresas privadas y publicas</p>
+                        <p class="index-font">nuestros asociados son empresas publicas y privadas</p>
                    </div>
                   </div>
                 </div>
